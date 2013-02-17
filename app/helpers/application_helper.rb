@@ -74,6 +74,10 @@ module ApplicationHelper
         return LanguageNames::get_language_name(locale)
     end
 
+    def locale_direction(locale)
+        return LanguageNames::get_language_direction(locale)
+    end
+
     # (unfortunately) ugly way of getting id of generated form element
     # ids
     # see http://chrisblunt.com/2009/10/12/rails-getting-the-id-of-form-fields-inside-a-fields_for-block/

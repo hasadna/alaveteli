@@ -187,9 +187,27 @@ class LanguageNames
             'za'	=> 'Saɯ cueŋƅ',
             'zu'	=> 'isiZulu'
         }
+        return language_names[self.get_locale_main_part(locale)]
+    end
+
+    def self.get_language_direction(locale)
+        rtl_language_names = {
+            'ar'	=> true,
+            'fa'	=> true,
+            'he'	=> true,
+            'ur'	=> true,
+            'yi'	=> true,
+        }
+        return rtl_language_names[self.get_locale_main_part(locale)]  ? 'rtl' : 'ltr'
+    end
+
+    ## Private methods
+    private
+
+    def self.get_locale_main_part(locale)
         locale = locale.sub("_", "-") # normalize
         main_part = I18n::Locale::Tag::Simple.tag(locale).subtags[0]
-        return language_names[main_part]
+        return main_part
     end
 end
 
