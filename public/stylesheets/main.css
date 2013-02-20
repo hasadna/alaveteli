@@ -366,9 +366,18 @@ clear:left;
 padding:8px 0 10px 42px;
 }
 
+html[dir=rtl] .request_icon_line {
+clear:right;
+padding:8px 42px 10px 0;
+}
+
 .icon_waiting_response,.icon_waiting_classification,.icon_waiting_clarification {
 background-image:url(/images/status-pending.png);
 color:#A68C2E;
+}
+
+html[dir=rtl] .icon_waiting_response, html[dir=rtl] .icon_waiting_classification, html[dir=rtl] .icon_waiting_clarification {
+background-position: right center;
 }
 
 .icon_rejected {
@@ -536,13 +545,25 @@ margin:0 0 1em;
 padding:0 0.5em;
 }
 
+html[dir=rtl] div.correspondence {
+float:right;
+}
+
 div.correspondence h2 {
 text-align:right;
 font-size:1em;
 }
 
+html[dir=rtl] div.correspondence h2 {
+text-align:left;
+}
+
 .event_actions {
 text-align:right;
+}
+
+html[dir=rtl] .event_actions {
+text-align:left;
 }
 
 div#after_actions {
@@ -769,6 +790,11 @@ margin-left:25%;
 font-size:0.9em;
 margin-left:11.5em;
 width:inherit;
+}
+
+html[dir=rtl] #signup .form_item_note, html[dir=rtl] #signin .form_note {
+margin-left:0;
+margin-right:11.5em;
 }
 
 div.controller_help dt a,div.controller_help h1 a,div#help_unhappy h1 a.hover_a {
@@ -1599,6 +1625,10 @@ border-width:1px;
 padding:4px 20px 0 9px;
 }
 
+html[dir=rtl] div.correspondence, html[dir=rtl] div.comment_in_request {
+padding:4px 9px 0 20px;
+}
+
 div.outgoing.correspondence {
  background: #FFFFD2;
 }
@@ -1867,6 +1897,11 @@ div.correspondence p.preview_subject {
 font-size:1.2em !important;
 margin-left:10px;
 line-height:25px;
+}
+
+html[dir=rtl] div.correspondence p.preview_subject {
+margin-left:0;
+margin-right:10px;
 }
 
 div.correspondence p.preview_subject strong {
