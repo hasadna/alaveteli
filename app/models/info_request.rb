@@ -32,7 +32,8 @@ class InfoRequest < ActiveRecord::Base
     strip_attributes!
 
     validates_presence_of :title, :message => N_("Please enter a summary of your request")
-    validates_format_of :title, :with => /[a-zA-Z]/, :message => N_("Please write a summary with some text in it"), :if => Proc.new { |info_request| !info_request.title.nil? && !info_request.title.empty? }
+    # can use /[[:alpha:]]/ below after migration to ruby 1.9
+    validates_format_of :title, :with => /[a-zA-Zא-ת]/u, :message => N_("Please write a summary with some text in it"), :if => Proc.new { |info_request| !info_request.title.nil? && !info_request.title.empty? }
 
     belongs_to :user
     validate :must_be_internal_or_external

@@ -1846,6 +1846,10 @@ overflow:hidden;
 background:url(/images/link-icon.png) no-repeat;
 }
 
+html[dir=rtl] a.link_to_this {
+text-align:right;
+}
+
 #to_public_body {
 display:block;
 margin-bottom:15px;
