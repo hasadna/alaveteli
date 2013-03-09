@@ -436,6 +436,13 @@ background-repeat:no-repeat;
 background-position:0 0;
 padding:8px 0 0 25px;
 }
+html[dir=rtl] .request_listing span.desc
+/* full page request list only */ {
+background-image:url(../images/navimg/quote-open-rtl.png);
+background-position:top right;
+padding-left:0;
+padding-right:25px;
+}
 
 .body_listing span.desc {
 background-image:none;
@@ -525,9 +532,18 @@ float:left;
 width:39em;
 }
 
+html[dir=rtl] .describe_state_form, html[dir=rtl] .undescribed_requests, html[dir=rtl] .gone_postal_help {
+float:right;
+}
+
 .requires_admin_details {
 margin-left:1.8em;
 width:37em;
+}
+
+html[dir=rtl] .requires_admin_details {
+margin-left:0;
+margin-right:1.8em;
 }
 
 #show_response_view {
@@ -1262,6 +1278,11 @@ line-height:18px;
 padding:0 0 0 40px;
 }
 
+html[dir=rtl] .request_listing span.desc {
+padding-left:0;
+padding-right:40px;
+}
+
 #search_form {
 margin:0 -6px 20px 0;
 }
@@ -1484,6 +1505,10 @@ border-radius:3px !important;
 -moz-border-radius:3px !important;
 font-size:1.1em !important;
 margin:0 !important;
+}
+
+html[dir=rtl] form input.use-datepicker[type=text] {
+background-position: 5px 3px;
 }
 
 /* Remove button padding in FF */
