@@ -1,0 +1,43 @@
+# crontab:
+# Timed tasks for FOI site
+#
+# Copyright (c) 2008 UK Citizens Online Democracy. All rights reserved.
+# Email: francis@mysociety.org. WWW: http://www.mysociety.org/
+
+PATH=/usr/local/bin:/usr/bin:/bin
+MAILTO=alaveteli@alaveteli.nsa.co.il
+
+# Every 5 minutes
+*/5 * * * * alaveteli run-with-lockfile -n /home/alaveteli/alaveteli/lockfiles/change-xapian-database.lock "/home/alaveteli/alaveteli/script/update-xapian-index verbose=true" >> /home/alaveteli/alaveteli/log/update-xapian-index.log || echo "stalled?"
+# Every 10 minutes
+5,15,25,35,45,55 * * * * alaveteli /etc/init.d/foi-alert-tracks check
+5,15,25,35,45,55 * * * * alaveteli /etc/init.d/foi-purge-varnish check
+
+# Once an hour
+09 * * * * alaveteli run-with-lockfile -n /home/alaveteli/alaveteli/lockfiles/alert-comment-on-request.lock /home/alaveteli/alaveteli/script/alert-comment-on-request || echo "stalled?"
+
+# Only root can read the log files
+31 * * * * root run-with-lockfile -n /home/alaveteli/alaveteli/lockfiles/load-mail-server-logs.lock /home/alaveteli/alaveteli/script/load-mail-server-logs || echo "stalled?"
+
+# Once a day, early morning
+23 4 * * * alaveteli run-with-lockfile -n /home/alaveteli/alaveteli/lockfiles/delete-old-things.lock /home/alaveteli/alaveteli/script/delete-old-things || echo "stalled?"
+0 6 * * * alaveteli run-with-lockfile -n /home/alaveteli/alaveteli/lockfiles/alert-overdue-requests.lock /home/alaveteli/alaveteli/script/alert-overdue-requests || echo "stalled?"
+0 7 * * * alaveteli run-with-lockfile -n /home/alaveteli/alaveteli/lockfiles/alert-new-response-reminders.lock /home/alaveteli/alaveteli/script/alert-new-response-reminders || echo "stalled?"
+0 8 * * * alaveteli run-with-lockfile -n /home/alaveteli/alaveteli/lockfiles/alert-not-clarified-request.lock /home/alaveteli/alaveteli/script/alert-not-clarified-request || echo "stalled?"
+2 4 * * * alaveteli run-with-lockfile -n /home/alaveteli/alaveteli/lockfiles/check-recent-requests-sent.lock /home/alaveteli/alaveteli/script/check-recent-requests-sent || echo "stalled?"
+45 3 * * * alaveteli run-with-lockfile -n /home/alaveteli/alaveteli/lockfiles/stop-new-responses-on-old-requests.lock /home/alaveteli/alaveteli/script/stop-new-responses-on-old-requests || echo "stalled?"
+# Only root can restart apache
+31 1 * * * root run-with-lockfile -n /home/alaveteli/alaveteli/lockfiles/change-xapian-database.lock "/home/alaveteli/alaveteli/script/compact-xapian-database production" || echo "stalled?"
+
+
+# Once a day on all servers
+43 2 * * * alaveteli /home/alaveteli/alaveteli/script/request-creation-graph
+48 2 * * * alaveteli /home/alaveteli/alaveteli/script/user-use-graph
+
+# Once a year :)
+0 0 1 11 * alaveteli /bin/echo "A year has passed, please update the bank holidays for the Freedom of Information site, thank you."
+
+
+
+
+

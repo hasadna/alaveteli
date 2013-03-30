@@ -1,14 +1,20 @@
 #!/usr/bin/env python
 import re
 
-mailto = "recipient-of-any-errors@localhost"
-user = "user-to-run-as"
-location = "/path/to/alaveteli"
+mailto = "alaveteli@alaveteli.nsa.co.il"
+user = "alaveteli"
+location = "/home/alaveteli/alaveteli"
+lockfileDir = location + "/lockfiles"
+logDir = location + "/log"
 
 template = open("config/crontab.ugly").read()
 template = re.sub(r"MAILTO=.*", "MAILTO=%s" % mailto, template)
 template = template.replace("!!(*= $user *)!!", user)
-template = re.sub(r"/data/vhost/.*/script", location + "/script", template)
+template = template.replace("!!(*= $vhost *)!!", 'dolar-vhost')
+template = template.replace("!!(*= $vcspath *)!!", 'dolar-vcspath')
+template = template.replace("/data/vhost/dolar-vhost/dolar-vcspath", location)
+template = template.replace("/data/vhost/dolar-vhost/logs", logDir)
+template = re.sub(r"/data/vhost/dolar-vhost/([-a-zA-Z]+\.lock)", lockfileDir + r'/\1', template)
 
 print template
 
