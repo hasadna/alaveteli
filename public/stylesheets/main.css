@@ -367,6 +367,7 @@ padding:8px 0 10px 42px;
 }
 
 html[dir=rtl] .request_icon_line {
+background-position:right center;
 clear:right;
 padding:8px 42px 10px 0;
 }
@@ -374,10 +375,6 @@ padding:8px 42px 10px 0;
 .icon_waiting_response,.icon_waiting_classification,.icon_waiting_clarification {
 background-image:url(/images/status-pending.png);
 color:#A68C2E;
-}
-
-html[dir=rtl] .icon_waiting_response, html[dir=rtl] .icon_waiting_classification, html[dir=rtl] .icon_waiting_clarification {
-background-position: right center;
 }
 
 .icon_rejected {
