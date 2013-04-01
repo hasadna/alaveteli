@@ -1,0 +1,25 @@
+<VirtualHost *:8080>
+    ServerName 127.0.0.1
+    ServerAlias 127.0.0.1
+    DocumentRoot /home/alaveteli/alaveteli/public
+    <Directory /home/alaveteli/alaveteli/public>
+        Allow from all
+        Options -MultiViews
+    </Directory>
+    Alias /images /home/alaveteli/alaveteli/public/images
+    Alias /stylesheets /home/alaveteli/alaveteli/public/stylesheets
+    Alias /javascripts /home/alaveteli/alaveteli/public/javascripts
+    RailsEnv development
+
+    ErrorLog /var/log/apache2/alaveteli-error.log
+
+    # Possible values include: debug, info, notice, warn, error, crit,
+    # alert, emerg.
+    LogLevel info
+
+    CustomLog /var/log/apache2/alaveveli-access.log combined
+
+    PassengerMaxRequests 0
+    PassengerResolveSymlinksInDocumentRoot on
+    PassengerMaxPoolSize 6
+</VirtualHost>
