@@ -184,6 +184,10 @@ color:#222;
 clear:left;
 }
 
+html[dir=rtl] h1,html[dir=rtl] h2,html[dir=rtl] h3 {
+clear:right;
+}
+
 h1 {
 font-size:2.2em;
 margin-bottom:15px;
@@ -613,6 +617,17 @@ float:left;
 margin-right:0.6em;
 }
 
+html[dir=rtl] .comment_quote {
+float:right;
+margin-right:0;
+margin-left:0.6em;
+-moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+-webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+-o-transform:matrix(-1, 0, 0, 1, 0, 0);
+-ms-transform:matrix(-1, 0, 0, 1, 0, 0);
+transform:matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .preview_subject {
 margin:1em 1.2em 0 0.8em;
 }
@@ -889,6 +904,12 @@ text-align:center;
 border:1px solid #ddd;
 margin-right:5px;
 padding:2px;
+}
+
+html[dir=rtl] #user_photo_on_profile img,html[dir=rtl] #user_photo_on_profile #set_photo {
+float:right;
+margin-right:0;
+margin-left:5px;
 }
 
 .user_photo_on_request img {
@@ -1297,6 +1318,10 @@ border-radius:0 2px 2px 0;
 float:right;
 width:230px;
 padding-top:27px;
+}
+
+html[dir=rtl] #header_right {
+float:left;
 }
 
 .feed_link,.act_link {
@@ -1959,6 +1984,13 @@ width:575px;
 padding-right:50px;
 float:left;
 }
+
+html[dir=rtl] .request_left,html[dir=rtl] #header_left {
+padding-right:0;
+padding-left:50px;
+float:right;
+}
+
 .medium_column {
 width:575px;
 padding-right:50px;
