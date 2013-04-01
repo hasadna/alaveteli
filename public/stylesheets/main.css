@@ -1669,8 +1669,17 @@ margin:0 0 1em 50px;
 padding:0 0.5em;
 }
 
+html[dir=rtl] div.comment_in_request {
+float:right;
+margin:0 50px 1em 0;
+}
+
 .comment_in_request_text {
 margin:0 0 0 10px;
+}
+
+html[dir=rtl] .comment_in_request_text {
+margin:0 10px 0 0;
 }
 
 #frontpage_splash {
