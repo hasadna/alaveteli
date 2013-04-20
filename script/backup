@@ -1,0 +1,3 @@
+#!/bin/bash
+backup perform -t alaveteli_backup -c /home/alaveteli/Backup/models/alaveteli_backup.rb
+
