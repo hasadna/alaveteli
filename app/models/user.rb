@@ -98,12 +98,7 @@ class User < ActiveRecord::Base
     end
 
     def get_locale
-        if !self.locale.nil?
-            locale = self.locale
-        else
-            locale = I18n.locale
-        end
-        return locale.to_s
+        (self.locale || I18n.locale).to_s
     end
 
     def visible_comments
@@ -311,7 +306,7 @@ class User < ActiveRecord::Base
         text = CGI.escapeHTML(text)
         text = MySociety::Format.make_clickable(text, :contract => 1)
         text = text.gsub(/\n/, '<br>')
-        return text
+        return text.html_safe
     end
 
     # Returns domain part of user's email address

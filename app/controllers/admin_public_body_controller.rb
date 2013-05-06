@@ -14,7 +14,7 @@ class AdminPublicBodyController < AdminController
 
     def _lookup_query_internal
         @locale = self.locale_from_params()
-        PublicBody.with_locale(@locale) do
+        I18n.with_locale(@locale) do
             @query = params[:query]
             if @query == ""
                 @query = nil
@@ -75,7 +75,7 @@ class AdminPublicBodyController < AdminController
 
     def show
         @locale = self.locale_from_params()
-        PublicBody.with_locale(@locale) do
+        I18n.with_locale(@locale) do
             @public_body = PublicBody.find(params[:id])
             render
         end
@@ -87,12 +87,12 @@ class AdminPublicBodyController < AdminController
     end
 
     def create
-        PublicBody.with_locale(I18n.default_locale) do
+        I18n.with_locale(I18n.default_locale) do
             params[:public_body][:last_edit_editor] = admin_current_user()
             @public_body = PublicBody.new(params[:public_body])
             if @public_body.save
                 flash[:notice] = 'PublicBody was successfully created.'
-                redirect_to admin_url('body/show/' + @public_body.id.to_s)
+                redirect_to admin_body_show_url(@public_body)
             else
                 render :action => 'new'
             end
@@ -106,12 +106,12 @@ class AdminPublicBodyController < AdminController
     end
 
     def update
-        PublicBody.with_locale(I18n.default_locale) do
+        I18n.with_locale(I18n.default_locale) do
             params[:public_body][:last_edit_editor] = admin_current_user()
             @public_body = PublicBody.find(params[:id])
             if @public_body.update_attributes(params[:public_body])
                 flash[:notice] = 'PublicBody was successfully updated.'
-                redirect_to admin_url('body/show/' + @public_body.id.to_s)
+                redirect_to admin_body_show_url(@public_body)
             else
                 render :action => 'edit'
             end
@@ -120,7 +120,7 @@ class AdminPublicBodyController < AdminController
 
     def destroy
         @locale = self.locale_from_params()
-        PublicBody.with_locale(@locale) do
+        I18n.with_locale(@locale) do
             public_body = PublicBody.find(params[:id])
 
             if public_body.info_requests.size > 0

@@ -4,9 +4,7 @@
 
 module Configuration
   DEFAULTS = {
-    :ADMIN_BASE_URL => '',
     :ADMIN_PASSWORD => '',
-    :ADMIN_PUBLIC_URL => '',
     :ADMIN_USERNAME => '',
     :AVAILABLE_LOCALES => '',
     :BLACKHOLE_PREFIX => 'do-not-reply-to-this-address',
@@ -16,10 +14,12 @@ module Configuration
     :COOKIE_STORE_SESSION_SECRET => 'this default is insecure as code is open source, please override for live sites in config/general; this will do for local development',
     :DEBUG_RECORD_MEMORY => false,
     :DEFAULT_LOCALE => '',
+    :DISABLE_EMERGENCY_USER => false,
     :DOMAIN => 'localhost:3000',
     :EXCEPTION_NOTIFICATIONS_FROM => '',
     :EXCEPTION_NOTIFICATIONS_TO => '',
     :FORCE_REGISTRATION_ON_NEW_REQUEST => false,
+    :FORCE_SSL => true,
     :FORWARD_NONBOUNCE_RESPONSES_TO => 'user-support@localhost',
     :FRONTPAGE_PUBLICBODY_EXAMPLES => '',
     :GA_CODE => '',

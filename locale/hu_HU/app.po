@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-#   <alaveteli@atlatszo.hu>, 2012.
+# alaveteli_hu <alaveteli@atlatszo.hu>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: http://github.com/sebbacon/alaveteli/issues\n"
-"POT-Creation-Date: 2012-12-18 10:11+0000\n"
-"PO-Revision-Date: 2012-12-18 10:14+0000\n"
+"POT-Creation-Date: 2013-04-23 16:34+0100\n"
+"PO-Revision-Date: 2013-04-23 15:59+0000\n"
 "Last-Translator: louisecrow <louise@mysociety.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hu_HU\n"
@@ -21,8 +21,8 @@ msgstr ""
 msgid "  This will appear on your {{site_name}} profile, to make it\\n            easier for others to get involved with what you're doing."
 msgstr "Ez a bemutatkozás megjelenik az ön {{site_name}} profiljában, így mások is láthatják, hogy ön milyen témakörrel foglalkozik. "
 
-msgid " (<strong>no ranty</strong> politics, read our <a href=\"%s\">moderation policy</a>)"
-msgstr "(<strong>NE</strong> politizáljon!!! Kérjük olvassa el <a href=\"%s\">moderálási alapelveinket</a>)!"
+msgid " (<strong>no ranty</strong> politics, read our <a href=\"{{url}}\">moderation policy</a>)"
+msgstr "(<strong>NE</strong> politizáljon!!! Kérjük olvassa el <a href=\"{{url}}\">moderálási alapelveinket</a>)!"
 
 msgid " (<strong>patience</strong>, especially for large files, it may take a while!)"
 msgstr "(<strong>Kérjük, legyen türelemmel</strong>, a művelet végrehajtása némi időt vesz igénybe - különösen nagy fájlok esetén.)"
@@ -53,9 +53,9 @@ msgstr " Adjon tanácsot, hogy hogyan lehet <strong>pontosítani</strong> az ada
 msgid " Ideas on what <strong>other documents to request</strong> which the authority may hold. "
 msgstr " Ötletek arra vonatkozóan, hogy milyen <strong>egyéb dokumentumokat lehet igényelni</strong>, amelyekkel az adatgazda rendelkezhet. "
 
-msgid " If you know the address to use, then please <a href=\"%s\">send it to us</a>.\\n        You may be able to find the address on their website, or by phoning them up and asking."
+msgid " If you know the address to use, then please <a href=\"{{url}}\">send it to us</a>.\\n        You may be able to find the address on their website, or by phoning them up and asking."
 msgstr ""
-" Ha ismer használható címet, kérjük <a href=\"%s\">küldje el nekünk</a>.\n"
+" Ha ismer használható címet, kérjük <a href=\"{{url}}\">küldje el nekünk</a>.\n"
 "        A címet megtalálhatja az adatgazda weboldalán, illetve telefonon is érdeklődhet. "
 
 msgid " Include relevant links, such as to a campaign page, your blog or a\\n            twitter account. They will be made clickable. \\n            e.g."
@@ -96,21 +96,6 @@ msgstr " részére, így a címzett megismerheti azt."
 msgid "\"Hello! We have an  <a href=\\\"/help/alaveteli?country_name=#{CGI.escape(current_country)}\\\">important message</a> for visitors outside {{country_name}}\""
 msgstr ""
 
-msgid "%d Freedom of Information request to %s"
-msgid_plural "%d Freedom of Information requests to %s"
-msgstr[0] "%2$s az alábbi %1$ddb közérdekűadat-igénylést kapta eddig"
-msgstr[1] "%2$s az alábbi %1$ddb közérdekűadat-igénylést kapta eddig"
-
-msgid "%d request"
-msgid_plural "%d requests"
-msgstr[0] "%d igénylés"
-msgstr[1] "%d igénylés"
-
-msgid "%d request made."
-msgid_plural "%d requests made."
-msgstr[0] "%d igénylés készült"
-msgstr[1] "%d igénylés készült"
-
 msgid "'Crime statistics by ward level for Wales'"
 msgstr "'A kiskereki oktatási intézmények 2010-es évi ételszállítási szerződései'."
 
@@ -125,6 +110,9 @@ msgstr "'{{link_to_request}}', igénylés "
 
 msgid "'{{link_to_user}}', a person"
 msgstr "'{{link_to_user}}', személy "
+
+msgid "*unknown*"
+msgstr ""
 
 msgid ",\\n\\n\\n\\nYours,\\n\\n{{user_name}}"
 msgstr ""
@@ -148,34 +136,14 @@ msgstr "2. Az adatigénylés összeállítása"
 msgid "3. Now check your request"
 msgstr "3. Az adatigénylés ellenőrzése"
 
-msgid "<a class=\"link_button_green\" href=\"{{url}}\">{{text}}</a>"
-msgstr "<a class=\"link_button_green\" href=\"{{url}}\">{{text}}</a> "
+msgid "<a href=\"{{browse_url}}\">Browse all</a> or <a href=\"{{add_url}}\">ask us to add one</a>."
+msgstr "<a href=\"{{browse_url}}\">Böngésszen az összes között</a> vagy <a href=\"{{add_url}}\">ha kéri, felvesszük a hiányzót</a>. "
 
-msgid "<a href=\"%s\">Add an annotation</a> (to help the requester or others)"
-msgstr "<a href=\"%s\">Kommentálhatja az igénylést</a> - amivel segítségére lehet az igénylőnek, valamint a téma iránt érdelődőknek."
+msgid "<a href=\"{{url}}\">Add an annotation</a> (to help the requester or others)"
+msgstr "<a href=\"{{url}}\">Kommentálhatja az igénylést</a> - amivel segítségére lehet az igénylőnek, valamint a téma iránt érdelődőknek."
 
-msgid "<a href=\"%s\">Are we missing a public authority?</a>"
-msgstr ""
-
-msgid "<a href=\"%s\">Are you the owner of\\n            any commercial copyright on this page?</a>"
-msgstr ""
-"<a href=\"%s\">Tulajdonosa az\n"
-"            oldalon található bármely kereskedelmi célú szerzői jognak?</a> "
-
-msgid "<a href=\"%s\">Browse all</a> or <a href=\"%s\">ask us to add one</a>."
-msgstr "<a href=\"%s\">Böngésszen az összes között</a> vagy <a href=\"%s\">ha kéri, felvesszük a hiányzót</a>. "
-
-msgid "<a href=\"%s\">Can't find the one you want?</a>"
-msgstr "<a href=\"%s\">Nem találja, amit keresett?</a> "
-
-msgid "<a href=\"%s\">Sign in</a> to change password, subscriptions and more ({{user_name}} only)"
-msgstr "<a href=\"%s\">Jelentkezzen be</a> a jelszó módosításához, a feliratkozáshoz stb. (csak {{user_name}}) "
-
-msgid "<a href=\"%s\">details</a>"
-msgstr "<a href=\"%s\">részletek</a> "
-
-msgid "<a href=\"%s\">what's that?</a>"
-msgstr "<a href=\"%s\">mi ez?</a> "
+msgid "<a href=\"{{url}}\">Sign in</a> to change password, subscriptions and more ({{user_name}} only)"
+msgstr "<a href=\"{{url}}\">Jelentkezzen be</a> a jelszó módosításához, a feliratkozáshoz stb. (csak {{user_name}}) "
 
 msgid "<p>All done! Thank you very much for your help.</p><p>There are <a href=\"{{helpus_url}}\">more things you can do</a> to help {{site_name}}.</p>"
 msgstr "<p>Kész! Köszönjük segítségét.</p><p>Különféle <a href=\"{{helpus_url}}\">módokon tud</a> segítséget nyújtani a {{site_name}} számára.</p> "
@@ -193,9 +161,6 @@ msgstr ""
 
 msgid "<p>Thank you! Hopefully your wait isn't too long.</p><p>You should get a response within {{late_number_of_days}} days, or be told if it will take longer (<a href=\"{{review_url}}\">details</a>).</p>"
 msgstr "<p>Köszönjük! Reméljük, nem kell sokáig várakoznia.</p><p>{{late_number_of_days}} napon belül választ kell kapnia. Amennyiben a válaszadás ennél több időt vesz igénybe, arról tájékoztatást kell kapnia (<a href=\"{{review_url}}\">részletek</a>).</p>"
-
-msgid "<p>Thank you! We'll look into what happened and try and fix it up.</p><p>If the error was a delivery failure, and you can find an up to date FOI email address for the authority, please tell us using the form below.</p>"
-msgstr "<p>Köszönjük! Megvizsgáljuk, hogy mi történt, és megpróbáljuk orvosolni a helyzetet.</p><p>Ha a hiba a továbbítás során merült fel, és újabb e-mail címet talál, amely használható arra, hogy az adott közintézményhez fordulhasson közérdekű adatok igénylésével, az alábbi űrlapon tájékoztasson bennünket.</p> "
 
 msgid "<p>Thank you! Your request is long overdue, by more than {{very_late_number_of_days}} working days. Most requests should be answered within {{late_number_of_days}} working days. You might like to complain about this, see below.</p>"
 msgstr "<p>Köszönjük! Igénylése több mint {{very_late_number_of_days}} munkanappal lejárt. A legtöbb igénylésre {{late_number_of_days}} munkanapon belül választ kell adni. Amennyiben panaszt kíván tenni, lásd alább.</p>"
@@ -221,11 +186,11 @@ msgstr "<p>Örülünk, hogy megkapta az összes kért információt! Kérjük, k
 msgid "<p>We're glad you got some of the information that you wanted. If you found {{site_name}} useful, <a href=\"{{donation_url}}\">make a donation</a> to the charity which runs it.</p><p>If you want to try and get the rest of the information, here's what to do now.</p>"
 msgstr "<p>Örülünk, hogy megkapta a kért információk egy részét. Amennyiben a {{site_name}} weboldalt hasznosnak találta, <a href=\"{{donation_url}}\">adományával támogassa</a> a weboldalt üzemeltető jótékonysági szervezetet.</p><p>Amennyiben a hiányzó információkat is meg kívánja szerezni, a következőket kell tennie.</p> "
 
-msgid "<p>You do not need to include your email in the request in order to get a reply (<a href=\"%s\">details</a>).</p>"
-msgstr "<p>Az igénylésben nem kell feltüntetnie e-mail címét ahhoz, hogy választ kapjon (<a href=\"%s\">részletek</a>).</p> "
+msgid "<p>You do not need to include your email in the request in order to get a reply (<a href=\"{{url}}\">details</a>).</p>"
+msgstr "<p>Az igénylésben nem kell feltüntetnie e-mail címét ahhoz, hogy választ kapjon (<a href=\"{{url}}\">részletek</a>).</p> "
 
-msgid "<p>You do not need to include your email in the request in order to get a reply, as we will ask for it on the next screen (<a href=\"%s\">details</a>).</p>"
-msgstr "<p>Az igénylésben nem kell feltüntetnie e-mail címét ahhoz, hogy választ kapjon, mivel azt a következő képernyőn kell megadnia (<a href=\"%s\">részletek</a>).</p>"
+msgid "<p>You do not need to include your email in the request in order to get a reply, as we will ask for it on the next screen (<a href=\"{{url}}\">details</a>).</p>"
+msgstr "<p>Az igénylésben nem kell feltüntetnie e-mail címét ahhoz, hogy választ kapjon, mivel azt a következő képernyőn kell megadnia (<a href=\"{{url}}\">részletek</a>).</p>"
 
 msgid "<p>Your request contains a <strong>postcode</strong>. Unless it directly relates to the subject of your request, please remove any address as it will <strong>appear publicly on the Internet</strong>.</p>"
 msgstr "<p>Igénylésében szerepel <strong>irányítószám</strong>. Amennyiben az nem kapcsolódik közvetlenül az igénylés tárgyához, kérjük, címének adatait távolítsa el, mivel az <strong>nyilvánosan is megjelenik az interneten</strong>.</p> "
@@ -242,13 +207,8 @@ msgstr ""
 "levélszemetet tartalmazó mappákat is. Előfordulhat, hogy üzeneteink ide kerülnek.</small>\n"
 "</p> "
 
-msgid "<span id='follow_count'>%d</span> person is following this authority"
-msgid_plural "<span id='follow_count'>%d</span> people are following this authority"
-msgstr[0] ""
-msgstr[1] ""
-
-msgid "<strong> Can I request information about myself?</strong>\\n\t\t\t<a href=\"%s\">No! (Click here for details)</a>"
-msgstr "Saját magamról is kérhetek információt? <br><strong>Nem!</strong> (<a href=\"%s\">Itt olvashat arról, hogy miért nem</a>)"
+msgid "<strong> Can I request information about myself?</strong>\\n\t\t\t<a href=\"{{url}}\">No! (Click here for details)</a>"
+msgstr "Saját magamról is kérhetek információt? <br><strong>Nem!</strong> (<a href=\"{{url}}\">Itt olvashat arról, hogy miért nem</a>)"
 
 msgid "<strong><code>commented_by:tony_bowden</code></strong> to search annotations made by Tony Bowden, typing the name as in the URL."
 msgstr "<strong><code>commented_by:tony_bowden</code></strong> Kovács János hozzászólásainak kereséséhez a név beírásával az URL szerint."
@@ -315,10 +275,10 @@ msgstr ""
 "    E-mailt küldünk új e-mail címére. Kövesse az\n"
 "    abban található utasításokat az e-mail cím módosításának megerősítéséhez!"
 
-msgid "<strong>Privacy note:</strong> If you want to request private information about\\n    yourself then <a href=\"%s\">click here</a>."
+msgid "<strong>Privacy note:</strong> If you want to request private information about\\n    yourself then <a href=\"{{url}}\">click here</a>."
 msgstr ""
 "<strong>Adatvédelmi nyilatkozat:</strong> Amennyiben önmagáról kíván személyes\n"
-"    jellegű információt igényelni, <a href=\"%s\">kattintson ide</a>. "
+"    jellegű információt igényelni, <a href=\"{{url}}\">kattintson ide</a>. "
 
 msgid "<strong>Privacy note:</strong> Your photo will be shown in public on the Internet,\\n    wherever you do something on {{site_name}}."
 msgstr ""
@@ -360,6 +320,9 @@ msgstr "A válasz <strong>postai úton</strong> érkezik"
 
 msgid "A strange reponse, required attention by the {{site_name}} team"
 msgstr "Furcsa válasz, amelyre felfigyelt a {{site_name}} csapata "
+
+msgid "A vexatious request"
+msgstr ""
 
 msgid "A {{site_name}} user"
 msgstr "{{site_name}} felhasználó "
@@ -452,13 +415,22 @@ msgstr ""
 msgid "Anyone:"
 msgstr "Bárki:"
 
+msgid "Applies to"
+msgstr ""
+
+msgid "Are we missing a public authority?"
+msgstr ""
+
+msgid "Are you the owner of any commercial copyright on this page?"
+msgstr "Tulajdonosa az oldalon található bármely kereskedelmi célú szerzői jognak?"
+
 msgid "Ask for <strong>specific</strong> documents or information, this site is not suitable for general enquiries."
 msgstr "Kérése irányulhat <strong>konkrét</strong> dokumentumokra vagy információkra, de az oldal általános tudakozódásra nem alkalmas. "
 
-msgid "At the bottom of this page, write a reply to them trying to persuade them to scan it in\\n            (<a href=\"%s\">more details</a>)."
+msgid "At the bottom of this page, write a reply to them trying to persuade them to scan it in\\n            (<a href=\"{{url}}\">more details</a>)."
 msgstr ""
 "Az oldal alsó részén írjon választ, amiben kéri a dokumentum szkennelését\n"
-"            (<a href=\"%s\">további részletek</a>). "
+"            (<a href=\"{{url}}\">további részletek</a>). "
 
 msgid "Attachment (optional):"
 msgstr "Melléklet (opcionális): "
@@ -492,6 +464,12 @@ msgstr "A vonatkozó jogszabály értelmében  a(z) {{public_body_link}} munkat�
 
 msgid "By law, {{public_body_link}} should normally have responded <strong>promptly</strong> and"
 msgstr "A vonatkozó jogszabály értelmében a(z) {{public_body_link}} adatgazdának normális esetben"
+
+msgid "Calculated home page"
+msgstr ""
+
+msgid "Can't find the one you want?"
+msgstr "Nem találja, amit keresett?"
 
 msgid "Cancel a {{site_name}} alert"
 msgstr "{{site_name}} értesítő törlése "
@@ -665,6 +643,9 @@ msgstr "Dátum: "
 msgid "Dear {{public_body_name}},"
 msgstr "Tisztelt {{public_body_name}}! "
 
+msgid "Default locale"
+msgstr ""
+
 msgid "Delayed response to your FOI request - "
 msgstr "Késedelmes válasz a közérdekű adatok igénylésére - "
 
@@ -673,6 +654,9 @@ msgstr "Késedelmes. "
 
 msgid "Delivery error"
 msgstr "Továbbítási hiba "
+
+msgid "Destroy {{name}}"
+msgstr ""
 
 msgid "Details of request '"
 msgstr "Igénylés részletei ' "
@@ -684,6 +668,9 @@ msgid "Disclaimer: This message and any reply that you make will be published on
 msgstr "Jognyilatkozat: Ezt az üzenetet és az ön válaszát is közzétesszük az interneten. Az adatvédelemre és szerzői jogokra vonatkozó politikánk: "
 
 msgid "Disclosure log"
+msgstr ""
+
+msgid "Disclosure log URL"
 msgstr ""
 
 msgid "Don't want to address your message to {{person_or_body}}?  You can also write to:"
@@ -704,13 +691,13 @@ msgstr "Eredeti melléklet letöltése "
 msgid "EIR"
 msgstr "Környezeti információról szóló rendeletet "
 
+msgid "Edit"
+msgstr ""
+
 msgid "Edit and add <strong>more details</strong> to the message above,\\n                explaining why you are dissatisfied with their response."
 msgstr ""
 "Módosítsa a fenti üzenetet úgy, hogy <strong>részletezi</strong>,\n"
 "                hogy miért elégedetlen a kapott válasszal."
-
-msgid "Edit language version:"
-msgstr "A nyelv módosítása: "
 
 msgid "Edit text about you"
 msgstr "Bemutatkozásom módosítása "
@@ -733,7 +720,7 @@ msgstr "E-mailben kérek értesítést az igényléssel kapcsolatos jövőbeli f
 msgid "Enter words that you want to find separated by spaces, e.g. <strong>climbing lane</strong>"
 msgstr "Írja be azokat a szavakat, amelyeket szóközzel elválasztva kíván megjeleníteni, pl. <strong>kapaszkodó sáv</strong> "
 
-msgid "Enter your response below. You may attach one file (use email, or\\n  <a href=\"%s\">contact us</a> if you need more)."
+msgid "Enter your response below. You may attach one file (use email, or\\n  <a href=\"{{url}}\">contact us</a> if you need more)."
 msgstr ""
 
 msgid "Environmental Information Regulations"
@@ -751,23 +738,29 @@ msgstr "Eseménytörténet"
 msgid "Event history details"
 msgstr "Eseménytörténet részletei "
 
-msgid "Everything that you enter on this page \\n                will be <strong>displayed publicly</strong> on\\n                this website forever (<a href=\"%s\">why?</a>)."
+msgid "Event {{id}}"
 msgstr ""
-"Minden, amit itt beír, \n"
-"                örökre <strong>látható lesz</strong> ezen\n"
-"                a weboldalon. (<a href=\"%s\">Itt olvashat arról, hogy miért van ez így</a>) "
 
-msgid "Everything that you enter on this page, including <strong>your name</strong>, \\n                will be <strong>displayed publicly</strong> on\\n                this website forever (<a href=\"%s\">why?</a>)."
+msgid "Everything that you enter on this page, including <strong>your name</strong>,\\n                will be <strong>displayed publicly</strong> on\\n                this website forever (<a href=\"{{url}}\">why?</a>)."
 msgstr ""
 "Az <strong>ön neve</strong>, valamint minden, amit itt beír,\n"
 "                örökre <strong>látható marad</strong> ezen\n"
-"                a weboldalon. ( <a href=\"%s\">... Miért?</a> )<br/>"
+"                a weboldalon. ( <a href=\"{{url}}\">... Miért?</a> )<br/>"
+
+msgid "Everything that you enter on this page\\n                will be <strong>displayed publicly</strong> on\\n                this website forever (<a href=\"{{url}}\">why?</a>)."
+msgstr ""
+"Minden, amit itt beír, \n"
+"                örökre <strong>látható lesz</strong> ezen\n"
+"                a weboldalon. (<a href=\"{{url}}\">Itt olvashat arról, hogy miért van ez így</a>) "
 
 msgid "FOI"
 msgstr "KözAdat"
 
 msgid "FOI email address for {{public_body}}"
 msgstr "{{public_body}} közérdekű adatok igényléséhez használt e-mail címe "
+
+msgid "FOI request – {{title}}"
+msgstr ""
 
 msgid "FOI requests"
 msgstr "Közérdekűadat-igénylések "
@@ -784,17 +777,17 @@ msgstr ""
 msgid "Failed to convert image to a PNG"
 msgstr "Nem sikerült a kép PNG formátumba való átalakítása "
 
-msgid "Failed to convert image to the correct size: at %{cols}x%{rows}, need %{width}x%{height}"
-msgstr "Nem sikerült a képet a megfelelő méretre alakítani: %{cols}x%{rows} esetén: %{width}x%{height} "
+msgid "Failed to convert image to the correct size: at {{cols}}x{{rows}}, need {{width}}x{{height}}"
+msgstr "Nem sikerült a képet a megfelelő méretre alakítani: {{cols}}x{{rows}} esetén: {{width}}x{{height}} "
 
 msgid "Filter"
 msgstr "Szűrő"
 
-msgid "First, type in the <strong>name of the UK public authority</strong> you'd \\n           like information from. <strong>By law, they have to respond</strong>\\n           (<a href=\"%s#%s\">why?</a>)."
+msgid "First, type in the <strong>name of the UK public authority</strong> you'd\\n           like information from. <strong>By law, they have to respond</strong>\\n           (<a href=\"{{url}}\">why?</a>)."
 msgstr ""
 "Először is keresse ki a KiMitTud adatbázisából azt az <strong>adatgazdát</strong>, amelyiktől \n"
 "           információt szeretne kérni. <strong>A vonatkozó jogszabály értelmében az adatgazdának kötelező válaszolnia.</strong>\n"
-"          <a href=\"%s#%s\">... Miért?</a><br/>Írja be a keresett adatgazda nevét, vagy nevének (ismert) részletét az alábbi mezőbe!"
+"          <a href=\"{{url}}\">... Miért?</a><br/>Írja be a keresett adatgazda nevét, vagy nevének (ismert) részletét az alábbi mezőbe!"
 
 msgid "Foi attachment"
 msgstr ""
@@ -874,8 +867,8 @@ msgstr "Ismeretlen okból kifolyólag ennek a közintézménynek nem lehet igén
 msgid "Forgotten your password?"
 msgstr "Elfelejtette jelszavát? "
 
-msgid "Found %d public authority %s"
-msgid_plural "Found %d public authorities %s"
+msgid "Found {{count}} public authority {{description}}"
+msgid_plural "Found {{count}} public authorities {{description}}"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -914,11 +907,11 @@ msgstr "Közérdekű adatok, melyeket a ettől az adatgazdától igényeltek: "
 msgid "From"
 msgstr ""
 
-msgid "From the request page, try replying to a particular message, rather than sending\\n    a general followup. If you need to make a general followup, and know\\n    an email which will go to the right place, please <a href=\"%s\">send it to us</a>."
+msgid "From the request page, try replying to a particular message, rather than sending\\n    a general followup. If you need to make a general followup, and know\\n    an email which will go to the right place, please <a href=\"{{url}}\">send it to us</a>."
 msgstr ""
 "Az igénylési oldalról próbáljon választ adni egy adott üzenetre ahelyett, hogy\n"
 "    általános nyomon követést küldene. Ha általános nyomon követést kíván küldeni, és ismer olyan\n"
-"    e-mail címet, amely a megfelelő helyre kerül, <a href=\"%s\">küldje el nekünk is</a>. "
+"    e-mail címet, amely a megfelelő helyre kerül, <a href=\"{{url}}\">küldje el nekünk is</a>. "
 
 msgid "From:"
 msgstr "Feladó:"
@@ -955,6 +948,9 @@ msgstr ""
 "    olvassa el, és segítsen nekünk, hogy mindenki számára rendezett legyen ez a webhely.\n"
 "    Köszönjük. "
 
+msgid "Hide request"
+msgstr ""
+
 msgid "Holiday"
 msgstr ""
 
@@ -966,6 +962,9 @@ msgstr "Holiday|Description"
 
 msgid "Home"
 msgstr "Címlap"
+
+msgid "Home page"
+msgstr ""
 
 msgid "Home page of authority"
 msgstr "Az adatgazda weboldala "
@@ -1019,8 +1018,17 @@ msgstr "Megkaptam <strong>az információk egy részét</strong>."
 msgid "I've received an <strong>error message</strong>"
 msgstr "<strong>Hibaüzenetet</strong> kaptam "
 
-msgid "If the address is wrong, or you know a better address, please <a href=\"%s\">contact us</a>."
-msgstr "Ha hibás a cím, vagy ismer egy jobb címet, <a href=\"%s\">lépjen velünk kapcsolatba</a>. "
+msgid "I've received an error message"
+msgstr ""
+
+msgid "Id"
+msgstr ""
+
+msgid "If the address is wrong, or you know a better address, please <a href=\"{{url}}\">contact us</a>."
+msgstr "Ha hibás a cím, vagy ismer egy jobb címet, <a href=\"{{url}}\">lépjen velünk kapcsolatba</a>. "
+
+msgid "If the error was a delivery failure, and you can find an up to date FOI email address for the authority, please tell us using the form below."
+msgstr ""
 
 msgid "If this is incorrect, or you would like to send a late response to the request\\nor an email on another subject to {{user}}, then please\\nemail {{contact_email}} for help."
 msgstr ""
@@ -1028,22 +1036,22 @@ msgstr ""
 "vagy {{user}} részére más tárgy miatt e-mailt kíván küldeni, küldjön \n"
 "e-mail üzenetet a(z) {{contact_email}} részére, hogy segítséget kapjon. "
 
-msgid "If you are dissatisfied by the response you got from\\n            the public authority, you have the right to\\n            complain (<a href=\"%s\">details</a>)."
+msgid "If you are dissatisfied by the response you got from\\n            the public authority, you have the right to\\n            complain (<a href=\"{{url}}\">details</a>)."
 msgstr ""
 "Ha nem elégedett az \n"
 "            adatgazda válaszával, joga van\n"
-"            panaszt tenni (<a href=\"%s\">részletek</a>). "
+"            panaszt tenni (<a href=\"{{url}}\">részletek</a>). "
 
-msgid "If you are still having trouble, please <a href=\"%s\">contact us</a>."
-msgstr "Ha továbbra is fennáll a probléma, <a href=\"%s\">lépjen velünk kapcsolatba</a>. "
+msgid "If you are still having trouble, please <a href=\"{{url}}\">contact us</a>."
+msgstr "Ha továbbra is fennáll a probléma, <a href=\"{{url}}\">lépjen velünk kapcsolatba</a>. "
 
-msgid "If you are the requester, then you may <a href=\"%s\">sign in</a> to view the request."
-msgstr "Ha ön az igénylő, az igénylés megtekintéséhez <a href=\"%s\">bejelentkezhet</a>. "
+msgid "If you are the requester, then you may <a href=\"{{url}}\">sign in</a> to view the request."
+msgstr "Ha ön az igénylő, az igénylés megtekintéséhez <a href=\"{{url}}\">bejelentkezhet</a>. "
 
-msgid "If you are thinking of using a pseudonym,\\n                please <a href=\"%s\">read this first</a>."
+msgid "If you are thinking of using a pseudonym,\\n                please <a href=\"{{url}}\">read this first</a>."
 msgstr ""
 "Amenniyben álnevet kíván használni,\n"
-"kérjük olvassa el előbb az ezzel kapcsolatos <a href=\"%s\">tudnivalókat</a>!"
+"kérjük olvassa el előbb az ezzel kapcsolatos <a href=\"{{url}}\">tudnivalókat</a>!"
 
 msgid "If you are {{user_link}}, please"
 msgstr "Ha ön {{user_link}}, kérjük, "
@@ -1096,6 +1104,9 @@ msgid "If your browser is set to accept cookies and you are seeing this message,
 msgstr ""
 "Ha böngészőjében engedélyezve van a sütik fogadása, és látja ezt az üzenetet,\n"
 "valószínűleg hiba van a kiszolgálónkkal. "
+
+msgid "Incoming email address"
+msgstr ""
 
 msgid "Incoming message"
 msgstr ""
@@ -1216,14 +1227,20 @@ msgstr ""
 msgid "Items matching the following conditions are currently displayed on your wall."
 msgstr ""
 
+msgid "Items sent in last month"
+msgstr ""
+
 msgid "Joined in"
 msgstr "Regisztráció éve:"
 
 msgid "Joined {{site_name}} in"
 msgstr "{{site_name}} regisztráció éve:"
 
-msgid "Keep it <strong>focused</strong>, you'll be more likely to get what you want (<a href=\"%s\">why?</a>)."
-msgstr "Fogalmazzon <strong>lényegre törően</strong>, hogy biztosan azt kapja, amire szüksége van! (<a href=\"%s\">...Miért?</a>)"
+msgid "Just one more thing"
+msgstr ""
+
+msgid "Keep it <strong>focused</strong>, you'll be more likely to get what you want (<a href=\"{{url}}\">why?</a>)."
+msgstr "Fogalmazzon <strong>lényegre törően</strong>, hogy biztosan azt kapja, amire szüksége van! (<a href=\"{{url}}\">...Miért?</a>)"
 
 msgid "Keywords"
 msgstr "Kulcsszavak:"
@@ -1242,8 +1259,26 @@ msgstr ""
 msgid "Link to this"
 msgstr "Hivatkozása ide "
 
+msgid "List all"
+msgstr ""
+
 msgid "List of all authorities (CSV)"
 msgstr "Az rendszerünkben található adatgazdák listája (CSV) "
+
+msgid "Listing FOI requests"
+msgstr ""
+
+msgid "Listing public authorities"
+msgstr ""
+
+msgid "Listing public authorities matching '{{query}}'"
+msgstr ""
+
+msgid "Listing tracks"
+msgstr ""
+
+msgid "Listing users"
+msgstr ""
 
 msgid "Log in to download a zip file of {{info_request_title}}"
 msgstr "Jelentkezzen be, hogy a {{info_request_title}} tárgyú adatigénylési zip-fájlként letölthesse"
@@ -1346,6 +1381,9 @@ msgstr "Név már foglalt "
 msgid "New Freedom of Information requests"
 msgstr "Új közérdekűadat-igénylések "
 
+msgid "New censor rule"
+msgstr ""
+
 msgid "New e-mail:"
 msgstr "Új e-mail: "
 
@@ -1391,6 +1429,9 @@ msgstr "Nincsen találat. "
 msgid "No similar requests found."
 msgstr "Nincsen hasonló igénylés. "
 
+msgid "No tracked things found."
+msgstr ""
+
 msgid "Nobody has made any Freedom of Information requests to {{public_body_name}} using this site yet."
 msgstr "{{public_body_name}} még nem kapott közérdekűadat-igénylést a KiMitTud weboldalon keresztül."
 
@@ -1399,6 +1440,9 @@ msgstr "Nem található."
 
 msgid "None made."
 msgstr "Még nincs."
+
+msgid "Not a valid FOI request"
+msgstr ""
 
 msgid "Note that the requester will not be notified about your annotation, because the request was published by {{public_body_name}} on their behalf."
 msgstr ""
@@ -1444,6 +1488,9 @@ msgstr "Egy személy található "
 
 msgid "One public authority found"
 msgstr "Egy adatgazda található a rendszerünkben"
+
+msgid "Only put in abbreviations which are really used, otherwise leave blank. Short or long name is used in the URL – don't worry about breaking URLs through renaming, as the history is used to redirect"
+msgstr ""
 
 msgid "Only requests made using {{site_name}} are shown."
 msgstr "Csak a {{site_name}} weboldalon benyújtott igénylések láthatók. "
@@ -1517,8 +1564,8 @@ msgstr "Kérjük, hajtsa végre az igénylések besorolását. "
 msgid "Please"
 msgstr "Kérjük, "
 
-msgid "Please <a href=\"%s\">get in touch</a> with us so we can fix it."
-msgstr "Kérjük, <a href=\"%s\">lépjen velünk kapcsolatba</a>, hogy kijavítsuk a hibát. "
+msgid "Please <a href=\"{{url}}\">get in touch</a> with us so we can fix it."
+msgstr "Kérjük, <a href=\"{{url}}\">lépjen velünk kapcsolatba</a>, hogy kijavítsuk a hibát. "
 
 msgid "Please <strong>answer the question above</strong> so we know whether the "
 msgstr "Kérjük, <strong>válaszoljon a fenti kérdésre</strong>, hogy tudjuk, hogy vajon "
@@ -1635,8 +1682,8 @@ msgstr ""
 "Sorban jelölje ki az egyes igényléseket, és <strong>jelezze mindannyiunk számára,</strong>\n"
 "hogy ezek sikeresen lezárultak-e vagy sem. "
 
-msgid "Please sign at the bottom with your name, or alter the \"%{signoff}\" signature"
-msgstr "Kérjük, írja alá nevét a lap alján vagy módosítsa a \"%{signoff}\" aláírást "
+msgid "Please sign at the bottom with your name, or alter the \"{{signoff}}\" signature"
+msgstr "Kérjük, írja alá nevét a lap alján vagy módosítsa a \"{{signoff}}\" aláírást "
 
 msgid "Please sign in as "
 msgstr "Jelentkezzen be mint "
@@ -1646,9 +1693,6 @@ msgstr ""
 
 msgid "Please type a message and/or choose a file containing your response."
 msgstr "Írja be üzenetét és/vagy válassza ki a válaszát tartalmazó fájlt. "
-
-msgid "Please use the form below to tell us more."
-msgstr "Az alábbi űrlapon további részleteket is megadhat. "
 
 msgid "Please use this email address for all replies to this request:"
 msgstr "Ezt az e-mail címet használja, amikor erre az igénylésre válaszol: "
@@ -1740,10 +1784,22 @@ msgstr "Adatgazdák - {{description}} "
 msgid "Public authorities {{start_count}} to {{end_count}} of {{total_count}}"
 msgstr "Adatgazdák: {{start_count}} - {{end_count}}, összesen: {{total_count}} "
 
+msgid "Public authority – {{name}}"
+msgstr ""
+
 msgid "Public body"
 msgstr ""
 
 msgid "Public body/translation"
+msgstr ""
+
+msgid "Public notes"
+msgstr ""
+
+msgid "Public page"
+msgstr ""
+
+msgid "Public page not available"
 msgstr ""
 
 msgid "PublicBody::Translation|Disclosure log"
@@ -1818,6 +1874,9 @@ msgstr "PublicBody|Version"
 msgid "Publication scheme"
 msgstr "Közzétételi rendszer "
 
+msgid "Publication scheme URL"
+msgstr ""
+
 msgid "Purge request"
 msgstr ""
 
@@ -1876,6 +1935,9 @@ msgstr "Belső felülvizsgálat kérése"
 
 msgid "Request an internal review from {{person_or_body}}"
 msgstr "Belső felülvizsgálat kérése {{person_or_body}}-tól/-től "
+
+msgid "Request email"
+msgstr ""
 
 msgid "Request has been removed"
 msgstr "Igénylés el lett távolítva "
@@ -1970,13 +2032,16 @@ msgstr "A keresés eredménye"
 msgid "Search the site to find what you were looking for."
 msgstr "Keresse a weboldalon a kívánt információkat. "
 
-msgid "Search within the %d Freedom of Information requests to %s"
-msgid_plural "Search within the %d Freedom of Information requests made to %s"
-msgstr[0] "Eddig még senki sem nyújtott be %s számára adatigénylést"
-msgstr[1] "Keresés a %d %s-t érintő adatigénylésben"
+msgid "Search within the {{count}} Freedom of Information requests to {{public_body_name}}"
+msgid_plural "Search within the {{count}} Freedom of Information requests made to {{public_body_name}}"
+msgstr[0] "Eddig még senki sem nyújtott be {{public_body_name}} számára adatigénylést"
+msgstr[1] "Keresés a {{count}} {{public_body_name}}-t érintő adatigénylésben"
 
 msgid "Search your contributions"
 msgstr "Keresés az adatigényléseimben"
+
+msgid "See bounce message"
+msgstr ""
 
 msgid "Select one to see more information about the authority."
 msgstr "Válassza ki a keresett adatgazdát az alábbi listából!"
@@ -2010,6 +2075,9 @@ msgstr "Igénylés küldése "
 
 msgid "Set your profile photo"
 msgstr "Profilkép beállítása "
+
+msgid "Short name"
+msgstr ""
 
 msgid "Short name is already taken"
 msgstr "Rövid név már foglalt "
@@ -2110,6 +2178,9 @@ msgstr "Mehet"
 msgid "Submit status"
 msgstr "Az igénylés státuszának beállítása "
 
+msgid "Submit status and send message"
+msgstr ""
+
 msgid "Subscribe to blog"
 msgstr "Feliratkozás a blogra "
 
@@ -2130,6 +2201,9 @@ msgstr "Állapottáblázat"
 
 msgid "Table of varieties"
 msgstr "Választéktáblázat"
+
+msgid "Tags"
+msgstr ""
 
 msgid "Tags (separated by a space):"
 msgstr "Címkék (szóközzel elválasztva): "
@@ -2157,6 +2231,9 @@ msgstr "Köszönjük, hogy frissítette az igénylést. "
 
 msgid "Thank you for updating your profile photo"
 msgstr "Köszönjük, hogy frissítette profilképét "
+
+msgid "Thank you! We'll look into what happened and try and fix it up."
+msgstr ""
 
 msgid "Thanks for helping - your work will make it easier for everyone to find successful\\nresponses, and maybe even let us make league tables..."
 msgstr ""
@@ -2240,22 +2317,22 @@ msgstr "Az igénylés <strong>sikeres volt</strong>. "
 msgid "The request was refused by the public authority"
 msgstr "Az adatgazda az igénylést elutasította"
 
-msgid "The request you have tried to view has been removed. There are\\nvarious reasons why we might have done this, sorry we can't be more specific here. Please <a\\n    href=\"%s\">contact us</a> if you have any questions."
+msgid "The request you have tried to view has been removed. There are\\nvarious reasons why we might have done this, sorry we can't be more specific here. Please <a\\n    href=\"{{url}}\">contact us</a> if you have any questions."
 msgstr ""
 "A megtekinteni kívánt igénylés el lett távolítva. Ennek\n"
 "különböző okai lehetnek, de erről bővebb információval itt nem szolgálhatunk. Amennyiben kérdése van, <a\n"
-"    href=\"%s\">lépjen velünk kapcsolatba</a>. "
+"    href=\"{{url}}\">lépjen velünk kapcsolatba</a>. "
 
 msgid "The requester has abandoned this request for some reason"
 msgstr "Az igénylő valami miatt felhagyott igénylésével"
 
-msgid "The response to your request has been <strong>delayed</strong>.  You can say that, \\n            by law, the authority should normally have responded\\n            <strong>promptly</strong> and"
+msgid "The response to your request has been <strong>delayed</strong>.  You can say that,\\n            by law, the authority should normally have responded\\n            <strong>promptly</strong> and"
 msgstr ""
 "Az igénylésére való válasz <strong>késik</strong>. ön mondhatja azt, hogy \n"
 "            a jogszabály értelmében a közintézménynek általában \n"
 "            <strong>azonnal</strong> kellett volna válaszolnia, és "
 
-msgid "The response to your request is <strong>long overdue</strong>.   You can say that, by \\n            law, under all circumstances, the authority should have responded\\n            by now"
+msgid "The response to your request is <strong>long overdue</strong>.   You can say that, by\\n            law, under all circumstances, the authority should have responded\\n            by now"
 msgstr ""
 "Az igénylését már <strong>régen meg kellett volna válaszolni</strong>. ön mondhatja azt, hogy \n"
 "            a jogszabály értelmében a közintézménynek minden körülmények közt válaszolnia kellett volna\n"
@@ -2342,16 +2419,16 @@ msgstr "Ezután megjelenik a(z) {{info_request_title}} igénylésre vonatkozó h
 msgid "There are {{count}} new annotations on your {{info_request}} request. Follow this link to see what they wrote."
 msgstr "{{count}} új hozzászólás érkezett a(z) {{info_request}} igényléséhez. A hivatkozásra kattintva elolvashatja ezeket. "
 
-msgid "There is %d person following this request"
-msgid_plural "There are %d people following this request"
-msgstr[0] "Ezt az igénylést %d felhasználó kíséri figyelemmel."
-msgstr[1] "Ezt az igénylést %d felhasználó kíséri figyelemmel."
-
 msgid "There is <strong>more than one person</strong> who uses this site and has this name.\\n    One of them is shown below, you may mean a different one:"
 msgstr ""
 
 msgid "There is a limit on the number of requests you can make in a day, because we don’t want public authorities to be bombarded with large numbers of inappropriate requests. If you feel you have a good reason to ask for the limit to be lifted in your case, please <a href='{{help_contact_path}}'>get in touch</a>."
 msgstr "Ennek a korlátozásnak az az oka hogy nem szeretnénk ha nagy mennyiségű inadekvát adatigényléssel árasztaná el az adatgazdákat valaki. Ha úgy érzi hogy nyomós oka van ennél több adatigénylést kezdeményezni rövid időn belül, kérjük, <a href='{{help_contact_path}}'>lépjen kapcsolatba</a> velünk."
+
+msgid "There is {{count}} person following this request"
+msgid_plural "There are {{count}} people following this request"
+msgstr[0] "Ezt az igénylést {{count}} felhasználó kíséri figyelemmel."
+msgstr[1] "Ezt az igénylést {{count}} felhasználó kíséri figyelemmel."
 
 msgid "There was a <strong>delivery error</strong> or similar, which needs fixing by the {{site_name}} team."
 msgstr "<strong>Kézbesítési hiba</strong> vagy valami hasonló történt, amelyet a {{site_name}} csapatának ki kell javítania. "
@@ -2391,10 +2468,10 @@ msgstr ""
 msgid "This authority no longer exists, so you cannot make a request to it."
 msgstr "Ez az adatgazda már nem létezik, ezért nem tud adatigényléseket fogadni. "
 
-msgid "This comment has been hidden. See annotations to\\n            find out why.  If you are the requester, then you may <a href=\"%s\">sign in</a> to view the response."
+msgid "This comment has been hidden. See annotations to\\n            find out why.  If you are the requester, then you may <a href=\"{{url}}\">sign in</a> to view the response."
 msgstr ""
 "Ez a hozzászolás el lett rejtve. A megjegyzésekből\n"
-"            megtudhatja ennek okát. Ha ön az igénylő, a válasz megtekintéséhez <a href=\"%s\">bejelentkezhet</a>. "
+"            megtudhatja ennek okát. Ha ön az igénylő, a válasz megtekintéséhez <a href=\"{{url}}\">bejelentkezhet</a>. "
 
 msgid "This covers a very wide spectrum of information about the state of\\n            the <strong>natural and built environment</strong>, such as:"
 msgstr ""
@@ -2415,13 +2492,16 @@ msgstr ""
 "Ennek az a magyarázata, hogy a(z) {{title}} igénylés már régi,\n"
 "amelyre jelölése miatt már nem érkezik válasz. "
 
+msgid "This is the first version."
+msgstr ""
+
 msgid "This is your own request, so you will be automatically emailed when new responses arrive."
 msgstr "Ez az ön saját igénylése, így automatikusan e-mail üzenetet kap, ha válasz érkezik. "
 
-msgid "This outgoing message has been hidden. See annotations to\\n\t\t\t\t\t\tfind out why.  If you are the requester, then you may <a href=\"%s\">sign in</a> to view the response."
+msgid "This outgoing message has been hidden. See annotations to\\n\t\t\t\t\t\tfind out why.  If you are the requester, then you may <a href=\"{{url}}\">sign in</a> to view the response."
 msgstr ""
 "Ez a kimenő üzenet el lett rejtve. A megjegyzésekből\n"
-"\t\t\t\t\t\tmegtudhatja ennek okát. Ha ön az igénylő, a válasz megtekintéséhez <a href=\"%s\">bejelentkezhet</a>. "
+"\t\t\t\t\t\tmegtudhatja ennek okát. Ha ön az igénylő, a válasz megtekintéséhez <a href=\"{{url}}\">bejelentkezhet</a>. "
 
 msgid "This particular request is finished:"
 msgstr "Ez az igénylés lezárult: "
@@ -2429,18 +2509,18 @@ msgstr "Ez az igénylés lezárult: "
 msgid "This person has made no Freedom of Information requests using this site."
 msgstr "Ez a személy még nem igényelt közérdekű adatokat a KiMitTud weboldal segítségével. "
 
-msgid "This person's %d Freedom of Information request"
-msgid_plural "This person's %d Freedom of Information requests"
-msgstr[0] "Ez a felhasználó még nem kísér figyelemmel semmilyen adatigénylést figyel."
-msgstr[1] "Ez a felhazsnáló az alábbi %d adatigénylést kíséri figyelemmel."
-
-msgid "This person's %d annotation"
-msgid_plural "This person's %d annotations"
-msgstr[0] "A felhasználó %d hozzászólása"
-msgstr[1] "A felhasználó %d hozzászólása"
-
 msgid "This person's annotations"
 msgstr "A felhasználó hozzászólásai"
+
+msgid "This person's {{count}} Freedom of Information request"
+msgid_plural "This person's {{count}} Freedom of Information requests"
+msgstr[0] "Ez a felhasználó még nem kísér figyelemmel semmilyen adatigénylést figyel."
+msgstr[1] "Ez a felhazsnáló az alábbi {{count}} adatigénylést kíséri figyelemmel."
+
+msgid "This person's {{count}} annotation"
+msgid_plural "This person's {{count}} annotations"
+msgstr[0] "A felhasználó {{count}} hozzászólása"
+msgstr[1] "A felhasználó {{count}} hozzászólása"
 
 msgid "This request <strong>requires administrator attention</strong>"
 msgstr "Ezt az igénylést <strong>meg kell vizsgálnia az adminisztrátornak</strong> "
@@ -2465,7 +2545,7 @@ msgstr ""
 "Ezt az igénylést <strong>visszavonta</strong> az azt benyújtó személy. \n"
 "        \t   Előfordulhat, hogy az alábbi levelezésben megtalálja ennek magyarázatát."
 
-msgid "This request has been marked for review by the site administrators, who have not hidden it at this time. If you believe it should be hidden, please <a href=\"%s\">contact us</a>."
+msgid "This request has been marked for review by the site administrators, who have not hidden it at this time. If you believe it should be hidden, please <a href=\"{{url}}\">contact us</a>."
 msgstr ""
 
 msgid "This request has been reported for administrator attention"
@@ -2482,21 +2562,24 @@ msgstr ""
 "Ennek az igénylésnek a népszerűsége el van 'rejtve'. Csak azért láthatja, mert kiemelt felhasználóként\n"
 "    jelentkezett be. "
 
-msgid "This request is hidden, so that only you the requester can see it. Please\\n    <a href=\"%s\">contact us</a> if you are not sure why."
+msgid "This request is hidden, so that only you the requester can see it. Please\\n    <a href=\"{{url}}\">contact us</a> if you are not sure why."
 msgstr ""
 "Ez az igénylés el van rejtve, és azt kizárólag az igénylő láthatja. Ha nem tudja ennek okát,\n"
-"   <a href=\"%s\">lépjen velünk kapcsolatba</a>"
+"   <a href=\"{{url}}\">lépjen velünk kapcsolatba</a>"
 
 msgid "This request is still in progress:"
 msgstr "Ez az igénylés még mindig folyamatban van: "
 
+msgid "This request requires administrator attention"
+msgstr ""
+
 msgid "This request was not made via {{site_name}}"
 msgstr ""
 
-msgid "This response has been hidden. See annotations to find out why.\\n            If you are the requester, then you may <a href=\"%s\">sign in</a> to view the response."
+msgid "This response has been hidden. See annotations to find out why.\\n            If you are the requester, then you may <a href=\"{{url}}\">sign in</a> to view the response."
 msgstr ""
 "Ez a válasz el lett rejtve. A megjegyzésekből megtudhatja ennek okát.\n"
-"            Ha ön az igénylő, a válasz megtekintéséhez <a href=\"%s\">bejelentkezhet</a>. "
+"            Ha ön az igénylő, a válasz megtekintéséhez <a href=\"{{url}}\">bejelentkezhet</a>. "
 
 msgid "This table shows the technical details of the internal events that happened\\nto this request on {{site_name}}. This could be used to generate information about\\nthe speed with which authorities respond to requests, the number of requests\\nwhich require a postal response and much more."
 msgstr ""
@@ -2664,11 +2747,11 @@ msgstr "Váratlan keresésieredmény-típus "
 msgid "Unexpected search result type "
 msgstr "Váratlan keresésieredmény-típus "
 
-msgid "Unfortunately we don't know the FOI\\nemail address for that authority, so we can't validate this.\\nPlease <a href=\"%s\">contact us</a> to sort it out."
+msgid "Unfortunately we don't know the FOI\\nemail address for that authority, so we can't validate this.\\nPlease <a href=\"{{url}}\">contact us</a> to sort it out."
 msgstr ""
 "Sajnos nem ismerjük az adatgazda\n"
 "közérdekű adatigényléshez használt e-mail címét, így ezt nem tudjuk hitelesíteni.\n"
-"Kérjük, <a href=\"%s\">lépjen velünk kapcsolatba</a>, hogy megoldjuk a problémát. "
+"Kérjük, <a href=\"{{url}}\">lépjen velünk kapcsolatba</a>, hogy megoldjuk a problémát. "
 
 msgid "Unfortunately, we do not have a working {{info_request_law_used_full}}\\naddress for"
 msgstr ""
@@ -2703,6 +2786,9 @@ msgid "User"
 msgstr ""
 
 msgid "User info request sent alert"
+msgstr ""
+
+msgid "User – {{name}}"
 msgstr ""
 
 msgid "UserInfoRequestSentAlert|Alert type"
@@ -2759,6 +2845,9 @@ msgstr "User|Salt"
 msgid "User|Url name"
 msgstr "User|Url name"
 
+msgid "Version {{version}}"
+msgstr ""
+
 msgid "View FOI email address"
 msgstr "Az adatgazda e-mail címe (amelyre a közérdekűadat-igényléseket elküldjük)"
 
@@ -2811,10 +2900,10 @@ msgstr ""
 "        &ndash;\n"
 "\tamennyiben ön {{user_link}}, kérjük, <a href=\"{{url}}\">jelentkezzen be</a>, és értékelje a megkapott adatokat."
 
-msgid "We will not reveal your email address to anybody unless you or\\n        the law tell us to (<a href=\"%s\">details</a>). "
+msgid "We will not reveal your email address to anybody unless you or\\n        the law tell us to (<a href=\"{{url}}\">details</a>). "
 msgstr ""
 "E-mail címét senkinek sem adjuk ki - kivéve, ha azt ön kéri\n"
-"       vagy jogszabály előírja (<a href=\"%s\">részletek</a>). "
+"       vagy jogszabály előírja (<a href=\"{{url}}\">részletek</a>). "
 
 msgid "We will not reveal your email address to anybody unless you\\nor the law tell us to."
 msgstr ""
@@ -2865,8 +2954,8 @@ msgstr ""
 "Ha papíron megkapja a választ, tájékoztasson másokat is\n"
 "           annak tartalmáról: "
 
-msgid "When you're done, <strong>come back here</strong>, <a href=\"%s\">reload this page</a> and file your new request."
-msgstr "Ha elkészült, <strong>térjen ide vissza</strong>, <a href=\"%s\">újból töltse be az oldalt</a> és nyújtsa be új igénylését. "
+msgid "When you're done, <strong>come back here</strong>, <a href=\"{{url}}\">reload this page</a> and file your new request."
+msgstr "Ha elkészült, <strong>térjen ide vissza</strong>, <a href=\"{{url}}\">újból töltse be az oldalt</a> és nyújtsa be új igénylését. "
 
 msgid "Which of these is happening?"
 msgstr "Az alábbiak közül mi történik most? "
@@ -2974,11 +3063,11 @@ msgstr "ön tudja, hogy mi okozta a hibát, és tud <strong>megoldást javasolni
 msgid "You may <strong>include attachments</strong>. If you would like to attach a\\n  file too large for email, use the form below."
 msgstr ""
 
-msgid "You may be able to find\\n    one on their website, or by phoning them up and asking. If you manage\\n    to find one, then please <a href=\"%s\">send it to us</a>."
+msgid "You may be able to find\\n    one on their website, or by phoning them up and asking. If you manage\\n    to find one, then please <a href=\"{{url}}\">send it to us</a>."
 msgstr ""
 "Előfordulhat, hogy\n"
 "   weboldalukon is talál ilyet, vagy hívja fel őket és érdeklődjön. Ha sikerült\n"
-"   ilyet találnia, kérjük, <a href=\"%s\">küldje el nekünk</a> is. "
+"   ilyet találnia, kérjük, <a href=\"{{url}}\">küldje el nekünk</a> is. "
 
 msgid "You may be able to find\\none on their website, or by phoning them up and asking. If you manage\\nto find one, then please <a href=\"{{help_url}}\">send it to us</a>."
 msgstr ""
@@ -3037,20 +3126,10 @@ msgstr ""
 msgid "You've now cleared your profile photo"
 msgstr "Eltávolította profilképét "
 
-msgid "Your %d Freedom of Information request"
-msgid_plural "Your %d Freedom of Information requests"
-msgstr[0] "Ön még nem készített adatigénylést"
-msgstr[1] "Az ön %d adatigénylése"
-
-msgid "Your %d annotation"
-msgid_plural "Your %d annotations"
-msgstr[0] "Az ön %d hozzászólása"
-msgstr[1] "Az ön %d hozzászólása"
-
-msgid "Your <strong>name will appear publicly</strong> \\n        (<a href=\"%s\">why?</a>)\\n        on this website and in search engines. If you\\n        are thinking of using a pseudonym, please \\n        <a href=\"%s\">read this first</a>."
+msgid "Your <strong>name will appear publicly</strong>\\n        (<a href=\"{{why_url}}\">why?</a>)\\n        on this website and in search engines. If you\\n        are thinking of using a pseudonym, please\\n        <a href=\"{{help_url}}\">read this first</a>."
 msgstr ""
-"Az ön <strong>neve nyilvánosan megjelenik</strong> ezen a weboldalon és a keresőmotorokban        (<a href=\"%s\">miért?</a>)\n"
-" Ha álnevet kíván használni, <a href=\"%s\">olvassa el ezt először</a>. "
+"Az ön <strong>neve nyilvánosan megjelenik</strong> ezen a weboldalon és a keresőmotorokban        (<a href=\"{{why_url}}\">miért?</a>)\n"
+" Ha álnevet kíván használni, <a href=\"{{help_url}}\">olvassa el ezt először</a>. "
 
 msgid "Your annotations"
 msgstr "Hozzászólásaim"
@@ -3061,8 +3140,8 @@ msgstr ""
 msgid "Your e-mail:"
 msgstr "Az ön e-mail címe: "
 
-msgid "Your follow up has not been sent because this request has been stopped to prevent spam. Please <a href=\"%s\">contact us</a> if you really want to send a follow up message."
-msgstr "Nyomon követési üzenete nem lett továbbítva, mert az igénylést a levélszemét megakadályozása érdekében leállították. <a href=\"%s\">Lépjen velünk kapcsolatba</a>, ha tényleg szeretne nyomon követési üzenetet küldeni. "
+msgid "Your follow up has not been sent because this request has been stopped to prevent spam. Please <a href=\"{{url}}\">contact us</a> if you really want to send a follow up message."
+msgstr "Nyomon követési üzenete nem lett továbbítva, mert az igénylést a levélszemét megakadályozása érdekében leállították. <a href=\"{{url}}\">Lépjen velünk kapcsolatba</a>, ha tényleg szeretne nyomon követési üzenetet küldeni. "
 
 msgid "Your follow up message has been sent on its way."
 msgstr "Nyomon követési üzenetét elküldtük. "
@@ -3085,10 +3164,10 @@ msgstr "Üzenete megjelenik a <strong>keresőmotorokban</strong> "
 msgid "Your name and annotation will appear in <strong>search engines</strong>."
 msgstr "Az ön neve és hozzászólásai megjelennek a <strong>keresőmotorokban</strong>. "
 
-msgid "Your name, request and any responses will appear in <strong>search engines</strong>\\n        (<a href=\"%s\">details</a>)."
+msgid "Your name, request and any responses will appear in <strong>search engines</strong>\\n        (<a href=\"{{url}}\">details</a>)."
 msgstr ""
 "Az ön neve, az igénylés és a válaszok megjelennek a <strong>keresőmotorokban</strong>. \n"
-"       <a href=\"%s\">Részletek itt.</a>"
+"       <a href=\"{{url}}\">Részletek itt.</a>"
 
 msgid "Your name:"
 msgstr "Neve: "
@@ -3114,11 +3193,21 @@ msgstr "Az ön igénylése: "
 msgid "Your response to an FOI request was not delivered"
 msgstr ""
 
-msgid "Your response will <strong>appear on the Internet</strong>, <a href=\"%s\">read why</a> and answers to other questions."
-msgstr "Válasza <strong>megjelenik az interneten</strong>, <a href=\"%s\">olvassa el, miért</a> az egyéb kérdésekre adott válaszokhoz hasonlóan. "
+msgid "Your response will <strong>appear on the Internet</strong>, <a href=\"{{url}}\">read why</a> and answers to other questions."
+msgstr "Válasza <strong>megjelenik az interneten</strong>, <a href=\"{{url}}\">olvassa el, miért</a> az egyéb kérdésekre adott válaszokhoz hasonlóan. "
 
 msgid "Your thoughts on what the {{site_name}} <strong>administrators</strong> should do about the request."
 msgstr "Az ön gondolatai arra vonatkozóan, hogy a {{site_name}} <strong>adminisztrátorainak</strong> mit kellene tenniük az igényléssel kapcsolatosan. "
+
+msgid "Your {{count}} Freedom of Information request"
+msgid_plural "Your {{count}} Freedom of Information requests"
+msgstr[0] "Ön még nem készített adatigénylést"
+msgstr[1] "Az ön {{count}} adatigénylése"
+
+msgid "Your {{count}} annotation"
+msgid_plural "Your {{count}} annotations"
+msgstr[0] "Az ön {{count}} hozzászólása"
+msgstr[1] "Az ön {{count}} hozzászólása"
 
 msgid "Your {{site_name}} email alert"
 msgstr "{{site_name}} hírlevél"
@@ -3146,6 +3235,9 @@ msgstr "Az igényelt információk összefoglalása egy sorban. pl:<br/>"
 
 msgid "admin"
 msgstr "admin"
+
+msgid "alaveteli_foi:The software that runs {{site_name}}"
+msgstr ""
 
 msgid "all requests"
 msgstr " minden igénylés "
@@ -3180,6 +3272,9 @@ msgstr "bármi"
 msgid "are long overdue."
 msgstr "adatgazdának már régen válaszolnia kellett volna."
 
+msgid "at"
+msgstr ""
+
 msgid "authorities"
 msgstr "közintézmények"
 
@@ -3191,6 +3286,9 @@ msgstr "‘{{first_letter}}’ kezdőbetűvel "
 
 msgid "between two dates"
 msgstr "két dátum között "
+
+msgid "but followupable"
+msgstr ""
 
 msgid "by"
 msgstr "által"
@@ -3213,7 +3311,7 @@ msgstr ""
 "           Telefonon is kapcsolatba léphet velük. "
 
 msgid "details"
-msgstr ""
+msgstr "részletek"
 
 msgid "display_status only works for incoming and outgoing messages right now"
 msgstr "display_status csak az éppen most beérkező és kimenő üzenetek esetében működik "
@@ -3275,18 +3373,24 @@ msgstr "közintézményektől érkező üzenetek "
 msgid "messages from users"
 msgstr "felhasználóktól érkező üzenetek "
 
+msgid "move..."
+msgstr ""
+
 msgid "no later than"
 msgstr "nem később, mint "
 
-msgid "no longer exists. If you are trying to make\\n    From the request page, try replying to a particular message, rather than sending\\n    a general followup. If you need to make a general followup, and know\\n    an email which will go to the right place, please <a href=\"%s\">send it to us</a>."
+msgid "no longer exists. If you are trying to make\\n    From the request page, try replying to a particular message, rather than sending\\n    a general followup. If you need to make a general followup, and know\\n    an email which will go to the right place, please <a href=\"{{url}}\">send it to us</a>."
 msgstr ""
 "már nem létezik. Ha \n"
 "   Az igénylési oldalról próbáljon választ adni egy adott üzenetre ahelyett, hogy\n"
 "   általános nyomon követést küldene. Ha általános nyomon követést kíván küldeni, és ismer olyan\n"
-"   e-mail címet, amely a megfelelő helyre kerül, <a href=\"%s\">küldje el nekünk is</a>. "
+"   e-mail címet, amely a megfelelő helyre kerül, <a href=\"{{url}}\">küldje el nekünk is</a>. "
 
 msgid "normally"
 msgstr "normális esetben "
+
+msgid "not requestable due to: {{reason}}"
+msgstr ""
 
 msgid "please sign in as "
 msgstr "jelentkezzen be mint "
@@ -3311,6 +3415,9 @@ msgstr "nyomon követési üzenet küldése "
 msgid "sent to {{public_body_name}} by {{info_request_user}} on {{date}}."
 msgstr "{{info_request_user}} {{public_body_name}} adatgazdánál {{date}} -n. "
 
+msgid "set to <strong>blank</strong> (empty string) if can't find an address; these emails are <strong>public</strong> as anyone can view with a CAPTCHA"
+msgstr ""
+
 msgid "show quoted sections"
 msgstr ""
 
@@ -3332,6 +3439,11 @@ msgstr "amelyeket ön nyújtott be a(z) "
 msgid "the main FOI contact address for {{public_body}}"
 msgstr "{{public_body}} közérdekűadat-igényléshez használt elsődleges e-mail címe "
 
+#. This phrase completes the following sentences:
+#. Request an internal review from...
+#. Send a public follow up message to...
+#. Send a public reply to...
+#. Don't want to address your message to... ?
 msgid "the main FOI contact at {{public_body}}"
 msgstr "{{public_body}} közérdekűadat-igénylésekkel foglalkozó elsődleges kapcsolattartója "
 
@@ -3380,8 +3492,31 @@ msgstr "hasznos információ. "
 msgid "users"
 msgstr "felhasználók"
 
+msgid "what's that?"
+msgstr "mi ez? "
+
 msgid "{{count}} FOI requests found"
 msgstr "A fent megadott szempontoknak az eddigi adatigénylések közül az alábbi {{count}} felel meg:"
+
+msgid "{{count}} Freedom of Information request to {{public_body_name}}"
+msgid_plural "{{count}} Freedom of Information requests to {{public_body_name}}"
+msgstr[0] "{{public_body_name}} az alábbi {{count}}db közérdekűadat-igénylést kapta eddig"
+msgstr[1] "{{public_body_name}} az alábbi {{count}}db közérdekűadat-igénylést kapta eddig"
+
+msgid "{{count}} person is following this authority"
+msgid_plural "{{count}} people are following this authority"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "{{count}} request"
+msgid_plural "{{count}} requests"
+msgstr[0] "{{count}} igénylés"
+msgstr[1] "{{count}} igénylés"
+
+msgid "{{count}} request made."
+msgid_plural "{{count}} requests made."
+msgstr[0] "{{count}} igénylés készült"
+msgstr[1] "{{count}} igénylés készült"
 
 msgid "{{existing_request_user}} already\\n      created the same request on {{date}}. You can either view the <a href=\"{{existing_request}}\">existing request</a>,\\n      or edit the details below to make a new but similar request."
 msgstr ""
@@ -3442,6 +3577,9 @@ msgstr "A {{site_name}} új igénylést küld a(z) <strong>{{request_email}}</st
 
 msgid "{{site_name}} users have made {{number_of_requests}} requests, including:"
 msgstr "A {{site_name}} felhasználói eddig {{number_of_requests}} igényléssel fordultak az adatgazdákhoz a rendszerünk segítségével. Ilyenek például: "
+
+msgid "{{thing_changed}} was changed from <code>{{from_value}}</code> to <code>{{to_value}}</code>"
+msgstr ""
 
 msgid "{{title}} - a Freedom of Information request to {{public_body}}"
 msgstr ""
