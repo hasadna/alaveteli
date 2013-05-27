@@ -252,7 +252,15 @@ class PublicBody < ActiveRecord::Base
     end
 
     def update_url_name
-        self.url_name = MySociety::Format.simplify_url_part(self.short_or_long_name, 'body')
+        url_name = MySociety::Format.simplify_url_part(self.short_or_long_name, 'body')
+        # For bodies with same name as others, add on arbitary numeric identifier
+        unique_url_name = url_name
+        suffix_num = 2 # as there's already one without numeric suffix
+        while not PublicBody.find_by_url_name(unique_url_name, :conditions => self.id.nil? ? nil : ["id <> ?", self.id] ).nil?
+            unique_url_name = url_name + "_" + suffix_num.to_s
+            suffix_num = suffix_num + 1
+        end
+        self.url_name = unique_url_name
     end
 
     # Return the short name if present, or else long name
