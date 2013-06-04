@@ -345,6 +345,9 @@ class IncomingMessage < ActiveRecord::Base
         text.gsub!(/^(>.*\n)/, replacement)
         text.gsub!(/^(On .+ (wrote|said):\n)/, replacement)
 
+        #outlook quoted reply marker
+        text.gsub!(/^\s*From:.*\n(.*\n)?\s*Sent:.*\n\s*To:.*\n\s*Subject:(.|\n)*/, replacement)
+
         ['-', '_', '*', '#'].each do |scorechar|
             score = /(?:[#{scorechar}]\s*){8,}/
             text.sub!(/(Disclaimer\s+)?  # appears just before

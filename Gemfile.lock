@@ -22,7 +22,7 @@ GIT
       rake (>= 0.8.3)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://www.rubygems.org/
   specs:
     annotate (2.4.0)
     archive-tar-minitar (0.5.2)
