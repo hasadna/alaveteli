@@ -119,3 +119,15 @@ other_request:
     awaiting_description: false
     comments_allowed: true
     idhash: b234567
+folding_request:
+    id: 112
+    title: How much folding can you do?
+    url_title: folding_isnt_easy
+    created_at: 2012-01-12 01:56:58.586598
+    updated_at: 2012-11-13 18:09:20.042061
+    public_body_id: 6
+    user_id: 5
+    described_state: successful
+    awaiting_description: false
+    comments_allowed: true
+    idhash: 173ad002

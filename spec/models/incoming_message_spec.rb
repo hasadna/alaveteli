@@ -35,6 +35,13 @@ describe IncomingMessage, " when dealing with incoming mail" do
         end
     end
 
+    it "should correctly fold outlook quoted message" do
+        incoming_message = incoming_messages(:folding_incoming_message)
+
+        incoming_message.get_main_body_text_folded.should include("FOLDED")
+        incoming_message.get_main_body_text_folded.should_not include("050-6205384")
+    end
+
     it "should ensure cached body text has been parsed correctly" do
         ir = info_requests(:fancy_dog_request)
         receive_incoming_mail('quoted-subject-iso8859-1.email', ir.incoming_email)
