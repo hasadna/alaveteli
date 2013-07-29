@@ -165,3 +165,13 @@ module GettextI18nRails
   end
 end
 
+# Monkeypatch Globalize to compensate for the way gettext_i18n_rails patches
+# I18n.locale= so that it changes underscores in locale names (as used in the gettext world)
+# to the dashes that I18n prefers
+module Globalize
+    class << self
+       def locale
+           read_locale || I18n.locale.to_s.gsub('-', '_').to_sym
+       end
+    end
+end
