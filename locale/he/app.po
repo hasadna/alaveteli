@@ -8,9 +8,9 @@
 # Ram Ezrach <ram.ezrach@gmail.com>, 2013
 # rshlo <r@roishlomi.com>, 2013
 # rshlo <r@roishlomi.com>, 2013
+# yauzi <yair.uziel@gmail.com>, 2013-2014
 # yauzi <yair.uziel@gmail.com>, 2013
-# yauzi <yair.uziel@gmail.com>, 2013
-# yehuda <yehudab@gmail.com>, 2013
+# yehuda <yehudab@gmail.com>, 2013-2014
 # yehuda <yehudab@gmail.com>, 2013
 # Yoni Yalovitsky <yoni@yalovitsky.com>, 2013
 # Yoni Yalovitsky <yoni@yalovitsky.com>, 2013
@@ -832,7 +832,7 @@ msgid "Dear {{name}},"
 msgstr "{{name}} יקר,"
 
 msgid "Dear {{public_body_name}},"
-msgstr "{{public_body_name}} נכבד, "
+msgstr "לכבוד הממונה על חוק חופש המידע ב{{public_body_name}},\n\nבהתאם לסעיף 7 לחוק חופש המידע, התשנ\"ח-1998 הריני לפנות אליכם כדלקמן:"
 
 msgid "Default locale"
 msgstr "ברירת מחדל של הגדרות מקומיות"
@@ -3712,10 +3712,10 @@ msgid "Your {{site_name}} email alert"
 msgstr "התרעת הדוא\"ל שלכם מאתר {{site_name}} "
 
 msgid "Yours faithfully,"
-msgstr "שלכם במסירות,"
+msgstr "בתודה מראש על טיפולכם המסור בבקשה זו,\n\nהסדנא לידע ציבורי (ע״ר)"
 
 msgid "Yours sincerely,"
-msgstr "שלכם בכנות,"
+msgstr "בתודה מראש על טיפולכם המסור בבקשה זו,\n\nהסדנא לידע ציבורי (ע״ר)"
 
 msgid "Yours,"
 msgstr "בהוקרה,"

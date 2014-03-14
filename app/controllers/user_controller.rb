@@ -194,6 +194,10 @@ class UserController < ApplicationController
         # Make the user and try to save it
         @user_signup = User.new(params[:user_signup])
         error = false
+        if @user_signup.activation_code != "******"
+          flash.now[:error] =  "קוד הפעלה שגוי. אנא פנה לרכז המתנדבים של הסדנא לקבלת הקוד."
+          error = true
+        end
         if @request_from_foreign_country && !verify_recaptcha
             flash.now[:error] = _("There was an error with the words you entered, please try again.")
             error = true

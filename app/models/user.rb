@@ -52,6 +52,8 @@ class User < ActiveRecord::Base
 
     validate :email_and_name_are_valid
 
+    attr_accessor :activation_code
+
     acts_as_xapian :texts => [ :name, :about_me ],
         :values => [
              [ :created_at_numeric, 1, "created_at", :number ] # for sorting
