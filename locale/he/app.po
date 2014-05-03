@@ -2397,7 +2397,7 @@ msgid "Send a public reply to {{person_or_body}}"
 msgstr "שלחו תגובה ציבורית ל{{person_or_body}}"
 
 msgid "Send follow up to '{{title}}'"
-msgstr "שלח בקשת מעקב ל'{{request_title}}'"
+msgstr "שלח בקשת מעקב ל'{{title}}'"
 
 msgid "Send message"
 msgstr "שלחו הודעה"
@@ -3712,10 +3712,10 @@ msgid "Your {{site_name}} email alert"
 msgstr "התרעת הדוא\"ל שלכם מאתר {{site_name}} "
 
 msgid "Yours faithfully,"
-msgstr "בתודה מראש על טיפולכם המסור בבקשה זו,\n\nהסדנא לידע ציבורי (ע״ר)"
+msgstr "הסדנא לידע ציבורי (ע״ר) פטורה מתשלום אגרה לפי תקנות חופש המידע (אגרות) התשנ״ט - 1999.\n\nבתודה מראש על טיפולכם המסור בבקשה זו,\n\nהסדנא לידע ציבורי (ע״ר)"
 
 msgid "Yours sincerely,"
-msgstr "בתודה מראש על טיפולכם המסור בבקשה זו,\n\nהסדנא לידע ציבורי (ע״ר)"
+msgstr "הסדנא לידע ציבורי (ע״ר) פטורה מתשלום אגרה לפי תקנות חופש המידע (אגרות) התשנ״ט - 1999. \n\nבתודה מראש על טיפולכם המסור בבקשה זו,\n\nהסדנא לידע ציבורי (ע״ר)"
 
 msgid "Yours,"
 msgstr "בהוקרה,"
