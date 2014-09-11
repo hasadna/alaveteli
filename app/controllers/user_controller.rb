@@ -192,7 +192,7 @@ class UserController < ApplicationController
         work_out_post_redirect
         @request_from_foreign_country = country_from_ip != Configuration::iso_country_code
         # Make the user and try to save it
-        @user_signup = User.new(params[:user_signup])
+        @user_signup = User.new(user_params(:user_signup))
         error = false
         if @user_signup.activation_code != "******"
           flash.now[:error] =  "קוד הפעלה שגוי. אנא פנה לרכז המתנדבים של הסדנא לקבלת הקוד."
@@ -596,6 +596,10 @@ class UserController < ApplicationController
     end
 
     private
+
+    def user_params(key = :user)
+        params[key].slice(:name, :email, :password, :password_confirmation, :activation_code)
+    end
 
     def is_modal_dialog
         (params[:modal].to_i != 0)
